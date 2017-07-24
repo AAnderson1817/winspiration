@@ -44,7 +44,7 @@ function randomPhoto(){
 
 //Event listeners
 
-window.addEventListener('resize', screenCheck);
+//window.addEventListener('resize', screenCheck);
 photo.addEventListener('click', randomPhoto);
 window.setInterval(randomPhoto, 5000);
 //ageput.addEventListener('keyup', changeText);
