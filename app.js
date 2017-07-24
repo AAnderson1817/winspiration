@@ -35,11 +35,11 @@ function randomPhoto(){
  randomPic = `${unsplash}/${width}/${height}?image=${parseNum}`;
  photo.src = randomPic;
 }
-function screenCheck(){
-  if (document.documentElement.clientWidth < 600) {
-	    alert("Small!")
-  }
-}
+//function screenCheck(){
+//  if (document.documentElement.clientWidth < 600) {
+//	    alert("Small!")
+//  }
+//}
 
 
 //Event listeners
