@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Variables!</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
       <div class="display">
-        <p id="p">Display</p>
+        <p id="p">Output</p>
         <input type="text" id='age'/>
         <input type="button" name="button" value="Try Me" id="button">
       </div>
@@ -15,40 +16,8 @@
         <img src="http://www.unsplash.it/400/400" alt="Rando" id="photo">
       </div>
     </div>
-    <style>
-    #photo{
-      height:400px;
-      width:400px;
-    }
-    </style>
 
 
-
-    <script type="text/javascript">
-    var unsplash = 'http://www.unsplash.it';
-    var randomNum = `${Math.floor(Math.random()*100)}`;
-    var parseNum = parseInt(getRandomNum());
-    var randomP = `${unsplash}/400/400?image=${parseNum}`;
-    var photo = document.getElementById('photo');
-    var display = document.getElementById('p');
-    var button = document.getElementById('button');
-    var ageput = document.getElementById('age');
-    function changeText(){
-      display.innerHTML = `I am ${ageput.value} years old`;
-    }
-    function clearText(){
-      ageput.value = '';
-      changeText();
-    }
-    function getRandomNum(){
-      var randomNum = Math.floor(Math.random()*100);
-      return randomNum;
-    }
-    function randomPhoto(){
-      photo.src = randomP;
-    }
-    button.addEventListener('click', randomPhoto);
-    ageput.addEventListener('keyup', changeText);
-    </script>
+  <script src="app.js"></script>
   </body>
 </html>
